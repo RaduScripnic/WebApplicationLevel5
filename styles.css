@@ -1,0 +1,4 @@
+h1 {
+    color: red;
+    animation: colourChange 5s infinite;
+}
