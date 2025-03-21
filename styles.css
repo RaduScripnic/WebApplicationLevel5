@@ -58,3 +58,46 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Center the gallery and make all projects uniform */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: flex-start; /* Align items at the top of the container */
+}
+
+.project {
+    text-align: center;
+    width: 300px; /* Set equal width for uniformity */
+    margin-bottom: 20px; /* Add margin between project items */
+}
+
+.project img,
+.video-section video {
+    width: 100%; /* Make both images and videos responsive */
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure images and videos maintain aspect ratio and fill the space */
+    border-radius: 5px; /* Slight border rounding for aesthetics */
+}
+
+/* Video section styling */
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.video-section video {
+    width: 100%; /* Match the width of the project images */
+    max-width: 300px; /* Set a max-width to keep them consistent */
+    height: 200px; /* Set a fixed height to match project images */
+    object-fit: cover; /* Maintain video aspect ratio */
+    border-radius: 5px;
+}
+
+/* Ensure sections h
