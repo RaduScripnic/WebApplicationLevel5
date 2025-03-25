@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects - TravauxPro Construction</title>
+    <title>Projects - TravauxPro Construction</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,31 +22,25 @@
     <section id="projects">
         <h2>Our Projects</h2>
         <p>Explore our portfolio of completed luxury renovations across Paris.</p>
-        <div class="gallery">
-            <div class="project">
-                <img src="project1.jpg" alt="Luxury Apartment Renovation">
-                <p>Luxury Apartment Renovation</p>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="Media/Luxury AR.jpg" alt="Luxury Apartment Renovation">
+                    <img src="Media/moder villa K.jpg" alt="Modern Villa Makeover">
+                    <img src="Media/Elegant OSR.jpg" alt="Elegant Office Space Redesign">
+                </div>
             </div>
-            <div class="project">
-                <img src="project2.jpg" alt="Modern Villa Makeover">
-                <p>Modern Villa Makeover</p>
-            </div>
-            <div class="project">
-                <img src="project3.jpg" alt="Elegant Office Space Redesign">
-                <p>Elegant Office Space Redesign</p>
-            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
-        <div class="video-section">
-            <h3>Watch Our Work in Action</h3>
-            <video width="600" controls>
-                <source src="home.mov" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+
     </section>
 
     <footer>
         <p>&copy; 2025 TravauxPro Construction. Follow us on <a href="#">Social Media</a>.</p>
     </footer>
+
+    <script src="javascript.js"></script>
 </body>
 </html>
