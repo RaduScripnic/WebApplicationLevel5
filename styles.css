@@ -155,22 +155,28 @@ section {
 /* === Carousel (Slider) === */
 .carousel-container {
     position: relative;
-    max-width: 100%;
+    max-width: 600px; /* Adjust as needed */
     overflow: hidden;
-    margin: 20px auto;
-    text-align: center;
+    margin: auto;
 }
 
 .carousel {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* Makes sure it fits 3 images side by side */
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
 }
 
 .carousel-slide img {
-    width: 100%;
-    max-height: 300px;
+    width: auto;  
+    flex: 0 0 33.33%; 
+    max-width: none;
     object-fit: cover;
-    border-radius: 5px;
+    display: block; /* Prevents extra spacing issues */
 }
 
 /* Navigation buttons */
@@ -265,5 +271,71 @@ footer {
     .btn {
         width: 100%;
         text-align: center;
+    }
+}
+
+/* === Services Section === */
+#services {
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service i {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* === Mobile Responsive Design === */
+@media screen and (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
