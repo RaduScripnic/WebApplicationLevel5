@@ -45,12 +45,12 @@ This document outlines the **manual testing procedures**, **validation results**
 ### ✅ HTML Validation
 - Tool: [W3C HTML Validator](https://validator.w3.org/)
 - Result: **No errors or warnings**
-- Screenshot saved as: `validation/html-validation.png`
+- Screenshot saved as: `validation/html-validation-index.png`
 
 ### ✅ CSS Validation
 - Tool: [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 - Result: **No errors**
-- Screenshot saved as: `validation/css-validation.png`
+- Screenshot saved as: `validation/css-validation-styles.png`
 
 ---
 
