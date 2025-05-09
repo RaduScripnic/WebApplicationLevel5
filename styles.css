@@ -151,58 +151,30 @@ section {
     object-fit: cover;
     border-radius: 5px;
 }
+/* === Bootstrap Carousel Custom Styling === */
 
-/* === Carousel (Slider) === */
-.carousel-container {
-    position: relative;
-    max-width: 600px; /* Adjust as needed */
-    overflow: hidden;
-    margin: auto;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 300%; /* Makes sure it fits 3 images side by side */
-}
-
-.carousel-slide {
-    display: flex;
-    width: 100%;
-}
-
-.carousel-slide img {
-    width: auto;  
-    flex: 0 0 33.33%; 
-    max-width: none;
+.carousel-item img {
     object-fit: cover;
-    display: block; /* Prevents extra spacing issues */
+    height: 450px;
+    width: 100%;
+    border-radius: 10px;
 }
 
-/* Navigation buttons */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 30px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
+/* Optional: Add shadow or border to images */
+.carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+/* Center text for carousel headings */
+#projects h2,
+#projects p {
+    text-align: center;
 }
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
+#projects .carousel {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* === Social Media Links === */
@@ -272,6 +244,10 @@ footer {
         width: 100%;
         text-align: center;
     }
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* === Services Section === */
@@ -330,12 +306,4 @@ footer {
     background-color: white;
     color: black;
     border: 2px solid black;
-}
-
-/* === Mobile Responsive Design === */
-@media screen and (max-width: 768px) {
-    .services-container {
-        flex-direction: column;
-        align-items: center;
-    }
 }
