@@ -28,12 +28,13 @@ To showcase construction services, past projects, and provide a contact hub, aim
 ├── index.html # Homepage
 ├── projects.html # Project gallery
 ├── contact.html # Contact info and map
+├── about.htnl # About the company
 ├── styles.css # External CSS
-├── images/ # Project images
-├── videos/ # Embedded videos
+├── Media/ # Project images
 ├── validation/ # HTML/CSS validation screenshots
 ├── README.md # This file
 ├── TESTING.md # Manual testing log
+├── js # Javascript file
 
 ---
 
