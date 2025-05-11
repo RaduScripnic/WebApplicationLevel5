@@ -16,6 +16,24 @@ To showcase construction services, past projects, and provide a contact hub, aim
 - As a visually impaired user, I want high-contrast content with alt text.
 - As a visitor, I want clear contact information and an embedded map.
 
+## 🖼️ Screenshots
+### 🏗️ Projects Page
+
+This section highlights TravauxPro Construction’s featured renovation work using a responsive Bootstrap carousel to showcase project images.
+
+![Projects Page Screenshot](validation/projects-page.png)
+### 🏠 Home Page
+
+The landing page introduces TravauxPro Construction with a bold hero section, clear navigation, and immediate insight into services offered.
+
+![Home Page Screenshot](validation/index-page.png)
+
+### 📍 Contact Page
+
+This page allows users to view the office location on Google Maps, get in touch via phone or email, and follow TravauxPro on social media.
+
+![Contact Page Screenshot](validation/contact-page.png)
+
 ---
 
 ## 🌐 Live Site
